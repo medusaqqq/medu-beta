@@ -8,6 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    padding : 0;
 }
 
 .cotizador {
@@ -86,6 +88,7 @@ input {
     border: 10px solid #ffd7e8;
     backdrop-filter: blur(3px);
     text-align: center;
+    margin: auto;
 
     font-family: "Google Sans", sans-serif;
     font-optical-sizing: auto;
@@ -117,4 +120,30 @@ input {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+/* CELULAR */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
