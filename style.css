@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding : 0;
 }
@@ -121,16 +121,18 @@ input {
     margin-bottom: 20px;
   }
 }
-/* CELULAR */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-}
 
 @media (max-width: 768px) {
   h1 {
     font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
   }
 
   .container {
@@ -147,3 +149,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+
+
