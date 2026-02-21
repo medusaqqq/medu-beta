@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Medubox jp</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<div class="container">
+    <img id="logo" src="img/logo.png" alt="">
+    <h2 id="title">࿔˚‧ Meducalculadora ଳ ⋆˚࿔</h2>
+
+    <label>Monto en USD:</label>
+    <input type="number" id="montousd" placeholder="Ej: 17.30">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <h3 id="resultado">Precio del link: $0</h3>
+    <p id="mensaje"></p>
+
+    <script>
+        function calcular() {
+            let monto = parseFloat(document.getElementById("montousd").value);
+            let usd = 1530
+            let fees = 3600; // fees fijos
+
+            let total = (monto * usd) + fees;
+            let mensaje = "Recorda que este monto total solo incluye fees de la pagina, NO envio a casilla. El envio a casilla se paga aparte ya que se calcula en base a la cantidad de items que tenga la caja al momento del cierre, tener esto en cuenta! Revisar la carrd para mas info";
+            document.getElementById("resultado").textContent = "Resultado:" + total.toFixed(2);
+            document.getElementById("resultado").innerText = "Precio del link: $" + total.toFixed(2);
+            document.getElementById("mensaje").textContent = mensaje;
+            document.getElementById("mensaje").innerText = mensaje;
+}
+
+    </script>
+
+</div>
+
+</body>
+</html>
