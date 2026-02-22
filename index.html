@@ -20,7 +20,7 @@
     <label>Monto en USD:</label>
     <input type="number" id="montousd" placeholder="Ej: 17.30">
 
-    <button onclick="calcular()">Calcular</button>
+    <button class="calcular-button" onclick="calcular()">Calcular</button>
 
     <h3 id="resultado">Precio del link: $0</h3>
     <p id="mensaje"></p>
@@ -32,7 +32,7 @@
             let fees = 3600; // fees fijos
 
             let total = (monto * usd) + fees;
-            let mensaje = "Recorda que este monto total solo incluye fees de la pagina, NO envio a casilla. El envio a casilla se paga aparte ya que se calcula en base a la cantidad de items que tenga la caja al momento del cierre, tener esto en cuenta! Revisar la carrd para mas info";
+            let mensaje = "Recorda que este monto total solo incluye fees de la pagina, NO envio a casilla. El envio a casilla se paga aparte ya que se calcula en base a la cantidad y tipo de items que tenga la caja al momento del cierre, tener esto en cuenta! Revisar la carrd para mas info";
             document.getElementById("resultado").textContent = "Resultado:" + total.toFixed(2);
             document.getElementById("resultado").innerText = "Precio del link: $" + total.toFixed(2);
             document.getElementById("mensaje").textContent = mensaje;
@@ -41,6 +41,8 @@
 
     </script>
 
+<div>
+        <button class="carrd" onclick="window.open('https://medubox.carrd.co/', '_blank')">࿔˚‧ Carrd Medubox ଳ ⋆˚࿔</button>
 </div>
 
 </body>
