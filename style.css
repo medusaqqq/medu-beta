@@ -120,9 +120,7 @@ input {
     width: 100%;
     margin-bottom: 20px;
   }
-}
 
-@media (max-width: 768px) {
   h1 {
     font-size: 22px;
   }
@@ -149,7 +147,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
