@@ -135,11 +135,16 @@ input {
 
   .container {
     width: 90%;
+    font-optical-sizing: auto;
+  
   }
 
   button {
     padding: 12px 20px;
-    font-size: 18px;
+    font-size: 15px;
+    font-optical-sizing: auto;
+    size: auto; 
+    width: auto;
   }
 }
 
