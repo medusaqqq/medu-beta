@@ -161,16 +161,27 @@ input {
     font-size: 14px;
   }
 
+  button {
+    font-size-adjust: auto;
+    size-adjust: auto;
+  }
+
+  .calcular-button {
+    font-size-adjust: auto;
+    width: auto;
+  }
+
   .container {
     width: 90%;
     font-optical-sizing: auto;
+    margin: 3%;
   
   }
 
   button {
     padding: 12px 20px;
     font-size: 15px;
-    font-optical-sizing: auto;
+    font-size-adjust: auto;
     size: auto; 
     width: auto;
   }
